@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: cursive;
+        }
+        .m1{
+            border: 2px solid black;
+            height: 100vh;
+            width: 99vw;
+        }
+        .m1{
+            background-image: url(img1.avif);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+        }
+        header{
+            height: 12%;
+            margin-top: 3%;
+            position: fixed;
+            z-index: 1000;
+            width: 100%;
+        }
+        header .navbar{
+            height: 35%;
+        }
+        header h1{
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: 500;
+            color: black;
+        }
+        .opt{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .opt a{
+            text-decoration: none;
+            padding: 1% 1% 0% 1%;
+            color: black;
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+        .info, .info2, .info3{
+            height: 67%;
+            width: 100%;
+           display: flex;
+           justify-content: center;
+           margin-top: 150px; 
+        }
+        .info .playful, .info2 .sleepy, .info3 .curious{
+            height: 100%;
+            width: 80%;
+            display: flex;
+            padding: 3%;
+            background-color: aliceblue;
+            align-items: center;
+            opacity: 0.6;
+        }
+        .playful img, .sleepy img, .curious img{
+            height: 100%;
+            width: 50%;
+            border-radius: 8px;
+            box-shadow: 0px 1px 1px 1px black;
+        }
+        p{
+            font-size: 2.5rem;
+            font-weight: 600;
+            padding: 3% 1%;
+            color: black;
+            width: 50%;
+        }
+        .m2{
+            border: 2px solid black;
+            height: 100vh;
+            width: 99vw;
+            background-image: url(img3.avif);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+        }
+        .m3{
+            border: 2px solid black;
+            height: 100vh;
+            width: 99vw;
+            background-image: url(img3.avif);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center; 
+        }
+        footer{
+            height: 15vh;
+            width: 99vw;
+            background-color: black;
+            display: flex;
+            align-items: center;
+        }
+        footer p{
+            color: white;
+            text-align: center;
+            width: 99vw;
+        }
+    </style>
+</head>
+<body>
+    <div class="m1" id="playful">
+        <header>
+            <h1>Adorable puppies</h1>
+            <nav>
+                <div class="opt">
+                    <a href="#playful">Playful pups</a>
+                    <a href="#sleepy">Sleepy pups</a>
+                    <a href="#curious">Curious pups</a>
+                </div>
+            </nav>
+        </header>
+        <section class="info">
+            <div class="playful">
+                <div>
+                    <img src="img1.avif" width="100%" height="100%">
+                </div>
+                <p>Playful Puppies <br>Puppies love to play!</p>
+            </div>
+        </section>
+    </div>
+    <div class="m2" id="sleepy">
+        <section class="info2">
+            <div class="sleepy">
+                <div>
+                    <img src="img4.avif" width="100%" height="50%">
+                </div>
+                <p>Sleepy Puppies <br>Puppies needs lots of sleep to grow big and strong.</p>
+            </div>
+        </section>
+    </div>
+    <div class="m3" id="curious">
+        <section class="info3">
+            <div class="curious">
+                <div>
+                    <img src="img3.avif" width="100%" height="100%">
+                </div>
+                <p>Curious Puppies <br>Puppies aer naturally curious and love to explore.</p>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Puppy Parallax Demo</p>
+    </footer>
+</body>
+</html>
